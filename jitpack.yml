@@ -1,0 +1,7 @@
+jdk:
+  - openjdk17
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - File="rsh-release.aar"
+  - mvn install:install-file -Dfile=${File} -DgroupId=com.github.karimwahdan -DartifactId=rsh -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
