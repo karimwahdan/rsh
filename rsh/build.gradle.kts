@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.karimwahdan.revitstorehelpers"
+    namespace = "com.karimwahdan.rsh"
     compileSdk = 34
 
     defaultConfig {
