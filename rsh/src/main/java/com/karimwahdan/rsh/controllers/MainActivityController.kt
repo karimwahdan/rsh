@@ -1,4 +1,4 @@
-@file:Suppress("unused")
+@file:Suppress("unused", "MemberVisibilityCanBePrivate")
 
 package com.karimwahdan.rsh.controllers
 
@@ -28,7 +28,7 @@ class MainActivityController : ViewModel() {
             }
         }
     }
-    private fun checkConnection() {
+    fun checkConnection() {
         viewModelScope.launch {
             _isConnected.value = isConnected()
         }
