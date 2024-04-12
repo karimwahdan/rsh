@@ -10,6 +10,7 @@ import com.karimwahdan.rsh.routes.interfaces.GeneralApi
 import com.karimwahdan.rsh.routes.interfaces.HomeApi
 import com.karimwahdan.rsh.routes.interfaces.NotificationsApi
 import com.karimwahdan.rsh.routes.interfaces.OrdersApi
+import com.karimwahdan.rsh.routes.interfaces.OwnerApi
 import com.karimwahdan.rsh.routes.interfaces.PrivacyApi
 import com.karimwahdan.rsh.routes.interfaces.ProductApi
 import com.karimwahdan.rsh.routes.interfaces.SubCategoryApi
@@ -19,6 +20,9 @@ import com.karimwahdan.rsh.routes.interfaces.WishlistApi
 
 
 class Callers() {
+
+    fun ownerApi(): OwnerApi {return RetrofitBuilder.createService(OwnerApi::class.java)}
+
     fun generalApi(): GeneralApi {return RetrofitBuilder.createService(GeneralApi::class.java)}
 
     fun homeApi(): HomeApi {return RetrofitBuilder.createService(HomeApi::class.java)}
