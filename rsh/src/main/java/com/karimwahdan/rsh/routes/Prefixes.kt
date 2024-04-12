@@ -24,19 +24,19 @@ const val id="id"
 
 class OrderStatusValue{
     companion object{
-        val inProgress=1
-        val sent=2
-        val approved=3
-        val inDelivery=4
-        val delivered=5
-        val rejected=6
-        val onHold=7
-        val cancelled=8
-        val returned=9
-        val placed=10
-        val preparing=11
-        val done=12
-        val ready=13
+        const val inProgress=1
+        const val sent=2
+        const val approved=3
+        const val inDelivery=4
+        const val delivered=5
+        const val rejected=6
+        const val onHold=7
+        const val cancelled=8
+        const val returned=9
+        const val placed=10
+        const val preparing=11
+        const val done=12
+        const val ready=13
 
     }
 }

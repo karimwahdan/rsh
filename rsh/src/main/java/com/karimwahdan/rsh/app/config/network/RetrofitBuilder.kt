@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitBuilder {
     private val client: OkHttpClient = buildClient()
-    private val retrofit = buildRetrofit()
+    val retrofit = buildRetrofit()
     private val connectException = MutableStateFlow(false)
 
     private fun resetConnectException() {
